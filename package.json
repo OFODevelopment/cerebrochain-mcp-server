@@ -1,0 +1,47 @@
+{
+  "name": "@cerebrochain/mcp-server",
+  "version": "1.0.0",
+  "description": "CerebroChain Supply Chain MCP Server — the first logistics/WMS MCP server for AI agents. Rate shopping, inventory, orders, fleet tracking, AI forecasting.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "cerebrochain-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/rixter21/WMS-Saas.git",
+    "directory": "mcp-servers/cerebrochain-mcp"
+  },
+  "homepage": "https://cerebrochain.com",
+  "keywords": [
+    "mcp",
+    "supply-chain",
+    "logistics",
+    "wms",
+    "warehouse",
+    "shipping",
+    "inventory",
+    "ai-agent",
+    "cerebrochain"
+  ],
+  "author": "CerebroChain",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
