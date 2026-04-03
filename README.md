@@ -1,7 +1,12 @@
+<p align="center">
+  <img src="assets/logo.svg" width="120" alt="CerebroChain Logo">
+</p>
+
 # @cerebrochain/mcp-server
 
 [![npm version](https://img.shields.io/npm/v/@cerebrochain/mcp-server)](https://www.npmjs.com/package/@cerebrochain/mcp-server)
 [![license](https://img.shields.io/npm/l/@cerebrochain/mcp-server)](https://opensource.org/licenses/MIT)
+[![Glama Score](https://glama.ai/mcp/servers/OFODevelopment/cerebrochain-mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/OFODevelopment/cerebrochain-mcp-server)
 
 The first logistics/WMS MCP server for AI agents. Connect Claude, Cursor, or any MCP-compatible AI to CerebroChain's supply chain APIs.
 

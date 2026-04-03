@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Outer hexagon -->
+  <path
+    d="M32 4L56 18V46L32 60L8 46V18L32 4Z"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    fill="none"
+  />
+  
+  <!-- Inner neural network -->
+  <g>
+    <!-- Central node -->
+    <circle cx="32" cy="32" r="4" fill="#4A90E2" />
+    
+    <!-- Connecting nodes -->
+    <circle cx="32" cy="18" r="3" fill="#FFFFFF" />
+    <circle cx="44" cy="25" r="3" fill="#FFFFFF" />
+    <circle cx="44" cy="39" r="3" fill="#FFFFFF" />
+    <circle cx="32" cy="46" r="3" fill="#FFFFFF" />
+    <circle cx="20" cy="39" r="3" fill="#FFFFFF" />
+    <circle cx="20" cy="25" r="3" fill="#FFFFFF" />
+    
+    <!-- Neural connections -->
+    <path
+      d="M32 32L32 18M32 32L44 25M32 32L44 39M32 32L32 46M32 32L20 39M32 32L20 25"
+      stroke="#4A90E2"
+      stroke-width="1"
+      opacity="0.6"
+    />
+  </g>
+</svg>
