@@ -1,11 +1,12 @@
 {
   "name": "@cerebrochain/mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CerebroChain Supply Chain MCP Server — the first logistics/WMS MCP server for AI agents. Rate shopping, inventory, orders, fleet tracking, AI forecasting.",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "cerebrochain-mcp": "dist/index.js"
+    "cerebrochain-mcp": "dist/index.js",
+    "cerebrochain-mcp-http": "dist/http.js"
   },
   "files": [
     "dist/**/*"
@@ -14,12 +15,16 @@
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
+    "start:http": "node dist/http.js",
+    "dev": "tsx src/index.ts",
+    "dev:http": "tsx src/http.ts"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/rixter21/WMS-Saas.git",
-    "directory": "mcp-servers/cerebrochain-mcp"
+    "url": "git+https://github.com/CerebroChain/cerebrochain-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CerebroChain/cerebrochain-mcp-server/issues"
   },
   "homepage": "https://cerebrochain.com",
   "keywords": [
